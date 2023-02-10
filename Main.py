@@ -380,12 +380,9 @@ def fitness(drone_journey):
     loading=[0]*number_drone
     for i in range(0,len(loading)):
         loading[i]=[]
-    num=0
-    while num!=3:
-        for i in range(0,number_truck):
-            if decryption[1][a[i]+truck_location[i]]==[-1]:
-                truck_move(i,truck_location[i])
-            else: num+=1
+    for i in range(0,number_truck):
+        if decryption[1][a[i]+truck_location[i]]==[-1]:
+            truck_move(i,truck_location[i])
     for g in range(0,number_customer):
         if drone_journey1==[]:break
         test=0
