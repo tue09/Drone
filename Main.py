@@ -444,7 +444,6 @@ def fitness(drone_journey):
     return time
 current_solution=fitness(drone_journey)
 start_time=time.time()
-print("Time is:",current_solution)
 test_split=0
 test_check=0
 number_test_split=0
@@ -574,7 +573,7 @@ print("Drone journey is:",drone_journey)
 print("Time is",current_solution)
 end_time=time.time()
 elapsed_time = end_time - start_time
-print("compute time is:",elapsed_time)
+print("elapsed time is:",elapsed_time)
 
 
 
